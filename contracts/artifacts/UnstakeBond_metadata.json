@@ -1,0 +1,236 @@
+{
+	"compiler": {
+		"version": "0.8.9+commit.e5eed63a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_staking",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_KLIMA",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_sKLIMA",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_sushi_router",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_KLIMABCT",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "KLIMA",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "KLIMABCT",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_bond_depository",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_sklima_amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_recipient",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "_bond_type",
+						"type": "bool"
+					},
+					{
+						"internalType": "address",
+						"name": "_principle",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_discount",
+						"type": "uint256"
+					}
+				],
+				"name": "bond",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_bond_depository",
+						"type": "address"
+					}
+				],
+				"name": "getDiscount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "_discount",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "sKLIMA",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/UnstakeBond.sol": "UnstakeBond"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts/interfaces/IERC20.sol": {
+			"keccak256": "0x947bcb3e54346eb9721847ded4ebfa3f1ad3487fb0260ff53ce38f1445ff409e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://11532308dd77a2078bb1931bfadf80038c22be82d62417ce0082e754c96c9397",
+				"dweb:/ipfs/QmbMzXYJ3N71vVffXfRSsMQGttTEVyoWJr5KdMkGT3qbR2"
+			]
+		},
+		"@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+			"keccak256": "0xc1452b054778f1926419196ef12ae200758a4ee728df69ae1cd13e5c16ca7df7",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4cb252ec7657ba7a91be688cbd263090aa5379e504f488a62d06198e0d630322",
+				"dweb:/ipfs/QmW56fDiDirhWfWiKrycXE5UY6tTNtFrYx39ipnSs8mkYb"
+			]
+		},
+		"contracts/UnstakeBond.sol": {
+			"keccak256": "0xcf24914c6392c6dd4ae527823b45d4aa13d04dc3b47dc781ac1a316fb3ea1f57",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://142367d1363d2369efc80f6bc6a2ba39ba854cc555c9410d186b50495d23ee3c",
+				"dweb:/ipfs/QmWyvNBPr17XenVZGTVAsuZBZwDW4k8f7ybyRyj2xVYKkY"
+			]
+		},
+		"interfaces/IBondDepository.sol": {
+			"keccak256": "0x71e91fda7e1a7cb3e9ff1b207a9219ad5cfe6cdf4bbc94155f7b29aab0526af6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://576d178a917e64f84dfed1b46920a6aa87cc002b3bba71e7e6e1c5b01578eb23",
+				"dweb:/ipfs/QmRiw4AFbLFTrUbTmoYXx5cK2VU7TgYVZjC2VsECa2YnGH"
+			]
+		},
+		"interfaces/IERC20.sol": {
+			"keccak256": "0xbbd854e6a8411824cb766d00dfb49135b76dcd4bb28917e1c7781a77feb13a0a",
+			"urls": [
+				"bzz-raw://afd9e8aec0383a2623279f46f709b9f6a9b001091e5562a1356b638d0a84bd63",
+				"dweb:/ipfs/Qmcuxgp5BcqiNuRfdqCnUdcuFsRDP7h16BMqTFwrRrykBc"
+			]
+		},
+		"interfaces/IStaking.sol": {
+			"keccak256": "0x0bba91a85bc0c6bcd1e382ad23f8a024b8172f8ba9917d597590006fd5f79800",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1b2e22387ba3f176d4437ac2f543960731056b8add7c20efb3f7b16b407701ad",
+				"dweb:/ipfs/QmefYif5ptjA7bMPwBdMPW3Cf4Rni4x5ASp2GhRDytTXw6"
+			]
+		},
+		"interfaces/IUniswapV2Pair.sol": {
+			"keccak256": "0x3111d6a2013b2d5bea5ef00b6d921a12ea25cd3f519354e99c6f11b934acbc59",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://1124c73cb29bdedd95616603d921cb5b05ef4a4fdcfb6b219d623b20c4ce4502",
+				"dweb:/ipfs/QmXBLieZP78GJN74PVEXinTM1diQ8Um2vaP71HjmLGfiHm"
+			]
+		},
+		"interfaces/IUniswapV2Router01.sol": {
+			"keccak256": "0x1b1b9c82590fa029f234710c01a87bcbcf68acb3dbc01faab0cae22e7ceedf72",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://4687f43043ca70728649a05e0f16b50ee48784c46baa045bac7d454bf7b06294",
+				"dweb:/ipfs/Qmf5MQ2vofiod4mYpt6gqN4Arrg6Auw1oFD6484jVR513Q"
+			]
+		},
+		"interfaces/IUniswapV2Router02.sol": {
+			"keccak256": "0x0c9477367d1df0d9e6381109b2088415af1262c42b92c89930703a95ae6e5994",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://adc32fb2079fd15711f14acd0c1fc5c31521fa78325cce0395f46c8182ef4702",
+				"dweb:/ipfs/QmSy3AEFZiyJBH4DxrKtjTSEFFfoSXJXMHJ1GcSee26kTQ"
+			]
+		}
+	},
+	"version": 1
+}

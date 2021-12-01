@@ -1,0 +1,107 @@
+{
+	"compiler": {
+		"version": "0.8.9+commit.e5eed63a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "bondPriceInUSD",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "price_",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_maxPrice",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_depositor",
+						"type": "address"
+					}
+				],
+				"name": "deposit",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_depositor",
+						"type": "address"
+					}
+				],
+				"name": "pendingPayoutFor",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "pendingPayout_",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"interfaces/IBondDepository.sol": "IKlimaBondDepository"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"interfaces/IBondDepository.sol": {
+			"keccak256": "0x71e91fda7e1a7cb3e9ff1b207a9219ad5cfe6cdf4bbc94155f7b29aab0526af6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://576d178a917e64f84dfed1b46920a6aa87cc002b3bba71e7e6e1c5b01578eb23",
+				"dweb:/ipfs/QmRiw4AFbLFTrUbTmoYXx5cK2VU7TgYVZjC2VsECa2YnGH"
+			]
+		}
+	},
+	"version": 1
+}
